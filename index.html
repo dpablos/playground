@@ -7,20 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PADEL Nuevos Negocios</title>
   <style>
-    body {
+   
+   .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    }
+
+   body {
       font-family: 'Montserrat', sans-serif;
       background-color: #0a3d62;
       color: #ffffff;
       margin: 0;
       padding: 0;
     }
-  
-    h1 {
-      font-weight: 700;
-      text-align: center;
-      margin: 20px 0;
-    }
-  
+    
     table {
       width: 100%;
       max-width: 800px;
@@ -28,277 +30,224 @@
       border-collapse: collapse;
     }
   
-    th,
     td {
       padding: 8px;
+      text-align: center;
+    }
+  
+    tr.separator td {
+      padding: 0;
+      border: none;
+      border-top: 1px solid #ffffff;
+    }
+  
+    /* Estilos de tarjeta */
+    tbody {
+      display: inline-block;
+      padding: 15px;
       border: 1px solid #ffffff;
-    }
-  
-    th {
-      background-color: #f7dc6f;
-      font-weight: 700;
-      text-align: left;
-      color:#000;
-    }
-  
-    td {
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
       background-color: rgba(255, 255, 255, 0.1);
     }
   
-    tr:nth-child(even) td {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-  
     @media screen and (max-width: 767px) {
-      table,
-      th,
-      td {
-        display: block;
-      }
-  
-      th {
-        display: none;
-      }
-  
-      td {
-        padding-left: 50%;
-        position: relative;
-        text-align: right;
-      }
-  
-      td:before {
-        content: attr(data-th);
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        font-weight: 700;
-        text-align: left;
+      table {
+        font-size: 14px;
       }
     }
   </style>
   
+  
+
+  
 </head>
 <body>
-    <div class="container">
-  <h1>PADEL Nuevos Negocios</h1>
+  <div class="container">
+
   <table>
-    <thead>
-      <tr>
-        <th>Jornada</th>
-        <th>Fecha</th>
-        <th>Equipo Local</th>
-        <th>Equipo Visitante</th>
-        <th>L</th>
-        <th>V</th>
-        <th>Tie Break</th>
-      </tr>
-    </thead>
     <tbody>
+      <!-- Jornada 1 -->
       <tr>
-        <td rowspan="4">1</td>
-        <td rowspan="3">Hasta el 21/04</td>
+        <td colspan="6"><strong>Jornada 1</strong> - Hasta el 21/04</td>
+      </tr>
+      <tr>
         <td>Integrators</td>
+        <td>vs</td>
         <td>Los Fusibles</td>
         <td>0</td>
         <td>0</td>
-        <td></td>
       </tr>
       <tr>
         <td>Los Acuda</td>
+        <td>vs</td>
         <td>Seguro del Hogar</td>
         <td>0</td>
         <td>0</td>
-        <td></td>
       </tr>
       <tr>
         <td>Experiencia-Asegurada</td>
+        <td>vs</td>
         <td>Salud-Corriente</td>
         <td>0</td>
         <td>0</td>
-        <td></td>
       </tr>
       <tr>
-        
-        <td colspan="6">Seguos Transversales SA</td>
+        <td colspan="5">Seguros-Transversales-SA descansa</td>
       </tr>
-
+      <tr class="separator">
+        <td colspan="6"></td>
+      </tr>
       <!-- Jornada 2 -->
-<tr>
-  <td rowspan="4">2</td>
-  <td rowspan="3">Hasta el 5/05</td>
-  <td>Integrators</td>
-  <td>Los Acuda</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Fusibles</td>
-  <td>Salud-Corriente</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Seguro del Hogar</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Experiencia-Asegurada descansa</td>
-</tr>
-
+    <tr>
+      <td colspan="3"><strong>Jornada 2</strong> - Hasta el 5/05</td>
+    </tr>
+    <tr>
+      <td>Integrators</td>
+      <td>vs</td>
+      <td>Los Acuda</td>
+    </tr>
+    <tr>
+      <td>Los Fusibles</td>
+      <td>vs</td>
+      <td>Salud-Corriente</td>
+    </tr>
+    <tr>
+      <td>Seguro del Hogar</td>
+      <td>vs</td>
+      <td>Seguros-Transversales-SA</td>
+    </tr>
+    <tr>
+      <td colspan="3">Experiencia-Asegurada descansa</td>
+    </tr>
+    <tr class="separator">
+      <td colspan="6"></td>
+    </tr>
       <!-- Jornada 3 -->
-<tr>
-  <td rowspan="4">3</td>
-  <td rowspan="3">Hasta el 19/05</td>
-  <td>Integrators</td>
-  <td>Seguro del Hogar</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Acuda</td>
-  <td>Salud-Corriente</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Experiencia-Asegurada</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Los Fusibles descansa</td>
-</tr>
+  <tr>
+    <td colspan="3"><strong>Jornada 3</strong> - Hasta el 19/05</td>
+  </tr>
+  <tr>
+    <td>Integrators</td>
+    <td>vs</td>
+    <td>Seguro del Hogar</td>
+  </tr>
+  <tr>
+    <td>Los Acuda</td>
+    <td>vs</td>
+    <td>Salud-Corriente</td>
+  </tr>
+  <tr>
+    <td>Experiencia-Asegurada</td>
+    <td>vs</td>
+    <td>Seguros-Transversales-SA</td>
+  </tr>
+  <tr>
+    <td colspan="3">Los Fusibles descansa</td>
+  </tr>
+  <tr class="separator">
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong>Jornada 4</strong> - Hasta el 02/06</td>
+  </tr>
+  <tr>
+    <td>Integrators</td>
+    <td>vs</td>
+    <td>Salud-Corriente</td>
+  </tr>
+  <tr>
+    <td>Los Acuda</td>
+    <td>vs</td>
+    <td>Seguros-Transversales-SA</td>
+  </tr>
+  <tr>
+    <td>Los Fusibles</td>
+    <td>vs</td>
+    <td>Experiencia-Asegurada</td>
+  </tr>
+  <tr>
+    <td colspan="3">Seguro del Hogar descansa</td>
 
-<!-- Jornada 4 -->
-<tr>
-  <td rowspan="4">4</td>
-  <td rowspan="3">Hasta el 02/06</td>
-  <td>Integrators</td>
-  <td>Salud-Corriente</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Acuda</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Fusibles</td>
-  <td>Experiencia-Asegurada</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Seguro del Hogar descansa</td>
-</tr>
-
-<!-- Jornada 5 -->
-<tr>
-  <td rowspan="4">5</td>
-  <td rowspan="2">Hasta el 16/06</td>
-  <td>Integrators</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-
-</tr>
-<tr>
-  <td>Los Fusibles</td>
-  <td>Seguro del Hogar</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Hasta el 16/06</td>
-  <td>Experiencia-Asegurada</td>
-  <td>Salud-Corriente</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Los Acuda descansa</td>
-</tr>
-
-<!-- Jornada 6 -->
-<!-- Jornada 6 -->
-<tr>
-  <td rowspan="4">6</td>
-  <td rowspan="3">Hasta el 23/06</td>
-  <td>Los Acuda</td>
-  <td>Seguro del Hogar</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Fusibles</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Experiencia-Asegurada</td>
-  <td>Salud-Corriente</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Integrators descansa</td>
-</tr>
-
-<!-- Jornada 7 -->
-<tr>
-  <td rowspan="4">7</td>
-  <td rowspan="3">Hasta el 30/06</td>
-  <td>Integrators</td>
-  <td>Experiencia-Asegurada</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Acuda</td>
-  <td>Seguros-Transversales-SA</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Los Fusibles</td>
-  <td>Seguro del Hogar</td>
-  <td>0</td>
-  <td>0</td>
-  <td></td>
-</tr>
-<tr>
-  <td colspan="6">Salud-Corriente descansa</td>
-</tr>
-
-
-
+  </tr>
+  <tr class="separator">
+    <td colspan="6"></td>
+  </tr>
+   <!-- Jornada 5 -->
+   <tr>
+    <td colspan="3"><strong>Jornada 5</strong> - Hasta el 16/06</td>
+  </tr>
+  <tr>
+    <td>Integrators</td>
+    <td>vs</td>
+    <td>Seguros-Transversales-SA</td>
+  </tr>
+  <tr>
+    <td>Los Fusibles</td>
+    <td>vs</td>
+    <td>Seguro del Hogar</td>
+  </tr>
+  <tr>
+    <td>Experiencia-Asegurada</td>
+    <td>vs</td>
+    <td>Salud-Corriente</td>
+  </tr>
+  <tr>
+    <td colspan="3">Los Acuda descansa</td>
+  </tr>
+  <tr class="separator">
+    <td colspan="6"></td>
+  </tr>
+   <!-- Jornada 6 -->
+   <tr>
+    <td colspan="3"><strong>Jornada 6</strong> - Hasta el 23/06</td>
+  </tr>
+  <tr>
+    <td>Los Acuda</td>
+    <td>vs</td>
+    <td>Seguro del Hogar</td>
+  </tr>
+  <tr>
+    <td>Los Fusibles</td>
+    <td>vs</td>
+    <td>Seguros-Transversales-SA</td>
+  </tr>
+  <tr>
+    <td>Experiencia-Asegurada</td>
+    <td>vs</td>
+    <td>Salud-Corriente</td>
+  </tr>
+  <tr>
+    <td colspan="3">Integrators descansa</td>
+  </tr>
+  <tr class="separator">
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong>Jornada 7</strong> - Hasta el 30/06</td>
+  </tr>
+  <tr>
+    <td>Integrators</td>
+    <td>vs</td>
+    <td>Experiencia-Asegurada</td>
+  </tr>
+  <tr>
+    <td>Los Acuda</td>
+    <td>vs</td>
+    <td>Seguros-Transversales-SA</td>
+  </tr>
+  <tr>
+    <td>Los Fusibles</td>
+    <td>vs</td>
+    <td>Seguro del Hogar</td>
+  </tr>
+  <tr>
+    <td colspan="3">Salud-Corriente descansa</td>
+  </tr>
     </tbody>
   </table>
+  
   </div>
 </body>
 </html>
