@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PADEL Nuevos Negocios</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #ddd;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+  <h1>PADEL Nuevos Negocios</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Jornada</th>
+        <th>Fecha</th>
+        <th>Equipo Local</th>
+        <th>Equipo Visitante</th>
+        <th>L</th>
+        <th>V</th>
+        <th>Tie Break</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">1</td>
+        <td rowspan="4">Hasta el 21/04</td>
+        <td>Integrators</td>
+        <td>Los Fusibles</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Los Acuda</td>
+        <td>Seguro del Hogar</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Experiencia-Asegurada</td>
+        <td>Salud-Corriente</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr>
+        
+        <td>Seguros-Transversales-SA</td>
+        <td>descansa</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <!-- Repite este patrón para las demás jornadas -->
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>
