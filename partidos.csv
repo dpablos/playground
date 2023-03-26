@@ -7,3 +7,23 @@ Jornada,Fecha,Equipo1,Equipo2
 2,Hasta el 5/05,Los Fusibles,Salud-Corriente
 2,Hasta el 5/05,Seguro del Hogar,Seguros-Transversales-SA
 2,Hasta el 5/05,Experiencia-Asegurada,descansa
+3,Hasta el 19/05,Integrators,Seguro del Hogar
+3,Hasta el 19/05,Los Acuda,Salud-Corriente
+3,Hasta el 19/05,Los Fusibles,descansa
+3,Hasta el 19/05,Experiencia-Asegurada,Seguros-Transversales-SA
+4,Hasta el 02/06,Integrators,Salud-Corriente
+4,Hasta el 02/06,Los Acuda,Seguros-Transversales-SA
+4,Hasta el 02/06,Los Fusibles,Experiencia-Asegurada
+4,Hasta el 02/06,Seguro del Hogar,descansa
+5,Hasta el 16/06,Integrators,Seguros-Transversales-SA
+5,Hasta el 16/06,Los Acuda,descansa
+5,Hasta el 16/06,Los Fusibles,Seguro del Hogar
+5,Hasta el 16/06,Experiencia-Asegurada,Salud-Corriente
+6,Hasta el 23/06,Integrators,descansa
+6,Hasta el 23/06,Los Acuda,Seguro del Hogar
+6,Hasta el 23/06,Los Fusibles,Seguros-Transversales-SA
+6,Hasta el 23/06,Experiencia-Asegurada,Salud-Corriente
+7,Hasta el 30/06,Integrators,Experiencia-Asegurada
+7,Hasta el 30/06,Los Acuda,Seguros-Transversales-SA
+7,Hasta el 30/06,Los Fusibles,Seguro del Hogar
+7,Hasta el 30/06,Salud-Corriente,descansa
