@@ -10,10 +10,10 @@ async function cargarJornadas() {
         if (cols.length > 1) {
             const jornada = cols[0];
             const fecha = cols[1];
-            const partido1 = cols[2];
-            const partido2 = cols[3];
-            const partido3 = cols[4];
-            const descanso = cols[5];
+            const partido1 = cols[2] + ' vs ' + cols[3];
+            const partido2 = cols[4] + ' vs ' + cols[5];
+            const partido3 = cols[6] + ' vs ' + cols[7];
+            const descanso = cols[8];
 
             const card = `
                 <div class="card mt-4">
