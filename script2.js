@@ -1,5 +1,5 @@
 async function cargarJornadas() {
-    const response = await fetch('jornadas.csv');
+    const response = await fetch('partidos.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1);
     const container = document.querySelector('.container');
