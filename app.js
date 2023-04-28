@@ -1,6 +1,13 @@
 function buscarTienda() {
   var id_tienda = document.getElementById("id_tienda").value;
-  var telefono_tienda = document.getElementById("telefono_tienda").value;
+  var id_tienda = document.getElementById("id_tienda").value;
+  var telefono_tienda = document.getElementById("telefono_tienda").value.replace(/\s/g, '');
+
+  var patronTelefono = /^[0-9]{9}$/;
+  if (!patronTelefono.test(telefono_tienda)) {
+    alert("El teléfono de la tienda debe ser un número de 9 dígitos sin espacios.");
+    return;
+  }
 
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "tiendas.csv");
